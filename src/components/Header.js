@@ -2,15 +2,25 @@ import React from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link } from 'react-router-dom';
+
+const inbuilt__link = {
+    margin: "1rem",
+  textDecoration: "none",
+  color: 'blue'
+}
 
 export default function Header(){
 
     return(
         <div className='header'>
-            <img 
-                className="header__logo"
-                src="http://pngimg.com/uploads/amazon/small/amazon_PNG11.png" 
-            />
+            <Link to='/' className='inbuilt__link'>
+                <img 
+                    className="header__logo"
+                    src="http://pngimg.com/uploads/amazon/small/amazon_PNG11.png" 
+                />
+            </Link>
+            
             
 
             <div className='header__search'>
@@ -50,7 +60,9 @@ export default function Header(){
                 
                 <div className='header__optionBasket'>
 
-                    <ShoppingCartIcon />
+                    <Link to='/checkout' className='inbuilt__link'>
+                        <ShoppingCartIcon />
+                    </Link>
 
                     <span
                         className='header__optionLineTwo header__basketCount'

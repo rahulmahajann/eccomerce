@@ -1,0 +1,11 @@
+.checkout{
+    display: flex;
+    padding: 20px;
+    height: max-content;    
+}
+
+
+.checkout__banner{
+    width: 100%;
+    margin-bottom: 10px;
+}

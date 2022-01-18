@@ -64,6 +64,7 @@
     display: flex;
     align-items: center;
     color: aliceblue;
+    
 }
 
 .header__optionLineTwo{
@@ -78,3 +79,8 @@
     z-index: 2;
     margin-right: 10px;
 }   
+
+.inbuilt__link{
+    text-decoration: none;
+    color: inherit
+}
